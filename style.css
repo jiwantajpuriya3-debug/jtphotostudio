@@ -216,7 +216,7 @@ nav a:hover {
         ),
         url("images/hero replace.jpg");
 
-    background-size: 92% auto !important;
+    background-size: 92% auto ;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -8925,7 +8925,7 @@ button:focus-visible{
 @media (min-width: 769px) {
     .hero::before {
         background-size: 92% auto !important;
-        background-position:  center !important;
+        background-position:center !important;
         background-repeat: no-repeat !important;
     }
 }
@@ -8941,7 +8941,7 @@ button:focus-visible{
 
         background-size: cover !important;
 
-        /* Photo ko right se thoda center ki taraf lao */
+        /* Photo ko right se thoda center ki taraf  */
         background-position: center !important;
 
         background-repeat: no-repeat !important;
