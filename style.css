@@ -9063,3 +9063,13 @@ button:focus-visible{
         background-size: cover !important;
     }
 }
+
+
+/* ===== HERO PHOTO - DESKTOP FIX ===== */
+@media (min-width: 769px) {
+    .hero::before {
+        background-size: 82% auto !important;
+        background-position: 88% center !important;
+        background-repeat: no-repeat !important;
+    }
+}
