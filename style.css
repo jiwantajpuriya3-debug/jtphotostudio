@@ -216,7 +216,7 @@ nav a:hover {
         ),
         url("images/hero replace.jpg");
 
-    background-size: cover;
+    background-size: 92% auto !important;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -8930,17 +8930,3 @@ button:focus-visible{
     }
 }
 
-/* =========================================================
-   HERO IMAGE SIZE & POSITION FIX — DESKTOP ONLY
-   Existing website code ko change nahi karta
-   ========================================================= */
-
-@media (min-width: 769px) {
-
-  .hero::before {
-    background-size: 92% auto !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-  }
-
-}
