@@ -8939,7 +8939,7 @@ button:focus-visible{
 
   .hero::before {
     background-size: 92% auto !important;
-    background-position: 98% center !important;
+    background-position: 100% center !important;
     background-repeat: no-repeat !important;
   }
 
