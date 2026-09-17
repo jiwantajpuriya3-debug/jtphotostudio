@@ -190,7 +190,7 @@ nav a:hover {
         url("images/hero replace.jpg");
 
     background-size: 90% auto;
-    background-position: right center;
+    background-position: center 25%;
     background-repeat: no-repeat;
 
     z-index: 0;
