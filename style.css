@@ -8964,3 +8964,65 @@ button:focus-visible{
         visibility: visible !important;
     }
 }
+
+
+/* =====================================================
+   FINAL MOBILE BLUR FIX — JT PHOTO STUDIO
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* QUICK SERVICE */
+    .quick-services,
+    .quick-services .quick-card,
+    .quick-services .quick-card * {
+        opacity: 1 !important;
+        filter: none !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    /* OUR SERVICES */
+    #services,
+    #services .center-heading,
+    #services .service-category,
+    #services .service-box,
+    #services .service-box * {
+        opacity: 1 !important;
+        filter: none !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    /* ABOUT LOGO */
+    #about,
+    #about .about-visual,
+    #about .about-visual img {
+        opacity: 1 !important;
+        filter: none !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    /* REVIEWS */
+    #reviews,
+    #reviews .review-card,
+    #reviews .review-card * {
+        opacity: 1 !important;
+        filter: none !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    /* CONTACT */
+    #contact,
+    #contact .contact-content,
+    #contact .location-box,
+    #contact .contact-content * {
+        opacity: 1 !important;
+        filter: none !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+}
