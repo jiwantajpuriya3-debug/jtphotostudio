@@ -8948,3 +8948,60 @@ button:focus-visible{
     }
 }
 
+ /* =========================================================
+   MOBILE HERO + ABOUT LOGO FIX
+   Only mobile — existing desktop layout untouched
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* -----------------------------------------------------
+       1. HERO PHOTO — REMOVE EMPTY SPACE ABOVE PHOTO
+       ----------------------------------------------------- */
+
+    .hero::before {
+        top: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        height: 130% !important;
+
+        /*
+         * Full mobile width so the photo starts from
+         * the top instead of sitting in the middle.
+         */
+        background-size: 100% auto !important;
+
+        /*
+         * IMPORTANT:
+         * "top" removes the large empty space above
+         * the hero photo.
+         */
+        background-position: center top !important;
+
+        background-repeat: no-repeat !important;
+    }
+
+
+    /* -----------------------------------------------------
+       2. ABOUT SECTION — MAKE LOGO PHOTO BIGGER
+       ----------------------------------------------------- */
+
+    #about .about-visual {
+        overflow: hidden !important;
+    }
+
+    #about .about-visual img {
+        width: 120% !important;
+        max-width: none !important;
+
+        /*
+         * Keeps the enlarged logo centered.
+         */
+        margin-left: -10% !important;
+
+        display: block !important;
+    }
+
+}
+
