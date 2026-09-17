@@ -405,8 +405,8 @@ nav a:hover {
             url("images/hero replace.jpg");
 
         /* Photo ko thoda zoom-out feel */
-        background-size: 100% auto;
-        background-position: center top;
+        background-size: 85% auto;
+        background-position: center ;
         background-repeat: no-repeat;
 
         z-index: 0;
