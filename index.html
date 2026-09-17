@@ -1310,19 +1310,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const revealItems = document.querySelectorAll(
-        ".quick-card, " +
-        "#portfolio .portfolio-item, " +
-        "#services .service-category, " +
-        "#services .service-box, " +
-        "#packages .package-card, " +
-        "#about .about-visual, " +
-        "#about .about-content, " +
-        "#about .stats > div, " +
-        "#reviews .review-card, " +
-        "#contact .contact-content, " +
-        "#contact .location-box"
-    );
+   const revealItems = document.querySelectorAll(
+    "#portfolio .portfolio-item, " +
+    "#packages .package-card, " +
+    "#about .about-content, " +
+    "#about .stats > div"
+);
 
     if (!revealItems.length) return;
 
