@@ -176,7 +176,7 @@ nav a:hover {
     top: 0;
     right: 0;
 
-    width: 70%;
+    width: 65%;
     height: 120%;
 
     background-image:
@@ -189,8 +189,8 @@ nav a:hover {
         ),
         url("images/hero replace.jpg");
 
-    background-size: cover;
-    background-position: center center;
+    background-size: 90% auto;
+    background-position: right center;
     background-repeat: no-repeat;
 
     z-index: 0;
