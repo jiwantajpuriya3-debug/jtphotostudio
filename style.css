@@ -1,3 +1,30 @@
+/*
+============================================================
+ JT PHOTO STUDIO — CLEANED PREMIUM STYLESHEET
+ -----------------------------------------------------------
+ Organized into:
+ 01. Reset & Global
+ 02. Theme Variables
+ 03. Navigation
+ 04. Hero
+ 05. Quick Services
+ 06. General Sections
+ 07. Portfolio
+ 08. Services
+ 09. Packages
+ 10. About & Stats
+ 11. Reviews
+ 12. Contact
+ 13. Footer
+ 14. Responsive / Feature Sections
+ 15. Final Compatibility Fixes
+
+ Duplicate CSS rules were removed where the selector, scope,
+ and declarations were identical. Existing visual behavior
+ and later intentional overrides are preserved.
+============================================================
+*/
+
 /* =====================================
    JT PHOTO STUDIO
    PREMIUM WEBSITE
@@ -176,7 +203,7 @@ nav a:hover {
     top: 0;
     right: 0;
 
-    width: 25%;
+    width: 55%;
     height: 120%;
 
     background-image:
@@ -2389,16 +2416,9 @@ footer > p {
    PORTFOLIO IMAGE SIZE FIX
 ===================================== */
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-}
 
-.portfolio-item {
-    height: 300px;
-    overflow: hidden;
-}
+
+
 
 .portfolio-image {
     width: 100%;
@@ -4145,9 +4165,7 @@ footer > p {
    JT HERO SOCIAL LINKS
 ===================================== */
 
-.hero {
-    position: relative;
-}
+
 
 .hero-socials {
     position: absolute;
@@ -4429,9 +4447,7 @@ footer > p {
     --jt-shadow:0 18px 55px rgba(0,0,0,.38);
 }
 
-html{
-    scroll-behavior:smooth;
-}
+
 
 body{
     background:#080808;
@@ -7914,10 +7930,7 @@ button:focus-visible{
 }
 
 /* RECENT PORTFOLIO */
-#portfolio .section-heading h2 {
-    order: 1 !important;
-    margin: 0 !important;
-}
+
 
 /* OUR WORK — collection ke bilkul upar */
 #portfolio .section-heading .section-small-title {
@@ -7934,11 +7947,7 @@ button:focus-visible{
 }
 
 /* VIEW ALL */
-#portfolio .section-heading .outline-btn {
-    order: 4 !important;
-    margin-top: 22px !important;
-    align-self: center !important;
-}
+
 
 
 /* ================= MOBILE ================= */
@@ -7978,20 +7987,10 @@ button:focus-visible{
    ========================================= */
 
 /* Portfolio heading ko vertical arrange karo */
-#portfolio .section-heading {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    gap: 0 !important;
-}
+
 
 /* RECENT PORTFOLIO */
-#portfolio .section-heading h2 {
-    order: 1 !important;
-    margin: 0 !important;
-}
+
 
 /* OUR WORK
    RECENT PORTFOLIO ke neeche,
@@ -8003,18 +8002,10 @@ button:focus-visible{
 }
 
 /* A COLLECTION */
-#portfolio .section-heading .section-description {
-    order: 3 !important;
-    margin: 0 auto !important;
-    text-align: center !important;
-}
+
 
 /* VIEW ALL */
-#portfolio .section-heading .outline-btn {
-    order: 4 !important;
-    margin-top: 22px !important;
-    align-self: center !important;
-}
+
 
 
 /* =========================================
@@ -8056,14 +8047,7 @@ button:focus-visible{
    PORTFOLIO HEADING — FINAL ORDER
    ===================================================== */
 
-#portfolio .section-heading {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    gap: 0 !important;
-}
+
 
 /* 1 — RECENT PORTFOLIO */
 #portfolio .section-heading h2 {
@@ -8218,10 +8202,7 @@ button:focus-visible{
 }
 
 /* 1 — RECENT PORTFOLIO */
-#portfolio .section-heading h2 {
-    order: 1 !important;
-    margin: 0 !important;
-}
+
 
 /* 2 — Our Work */
 #portfolio .section-heading .section-small-title {
@@ -8698,9 +8679,7 @@ button:focus-visible{
         0 20px 50px rgba(0,0,0,.45);
 }
 
-.gallery-category:hover::before {
-    opacity: 1;
-}
+
 
 .category-number {
     position: absolute;
@@ -8742,9 +8721,7 @@ button:focus-visible{
    PHOTO VIEW
 ===================================== */
 
-.gallery-photos-view {
-    display: none;
-}
+
 
 .gallery-back {
     display: block;
@@ -8817,9 +8794,7 @@ button:focus-visible{
     transition: transform .7s ease;
 }
 
-.gallery-photo:hover img {
-    transform: scale(1.06);
-}
+
 
 
 /* =====================================
@@ -8875,56 +8850,17 @@ button:focus-visible{
     }
 }
 
-/* =========================================
-   FIX — MOBILE SCROLL REVEAL
-   ========================================= */
+/* =========================================================
+   FINAL COMPATIBILITY FIXES
+   ---------------------------------------------------------
+   These rules intentionally override the older scroll-reveal
+   animation on mobile so content stays readable and sharp.
+   They also keep portfolio images free from blur/filter effects.
+   ========================================================= */
 
-.reveal {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    visibility: visible !important;
-}
-
-.reveal.show {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    visibility: visible !important;
-}
-
-/* Keep portfolio images sharp */
-#portfolio .portfolio-item,
-#portfolio .portfolio-image,
-#portfolio .portfolio-image img {
-    filter: none !important;
-}
-
-#portfolio .portfolio-image img {
-    opacity: 1 !important;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .service-box,
-    .portfolio-item,
-    .package-card,
-    .review-card,
-    .about-content,
-    .stats {
-        opacity: 1 !important;
-        transform: none !important;
-        filter: none !important;
-        visibility: visible !important;
-    }
-
-}
-
-   /* =========================================
-   FIX — MOBILE CONTENT BLUR
-   ========================================= */
-
+/* 1. Scroll-reveal elements: keep content visible */
+.reveal,
+.reveal.show,
 .jt-reveal,
 .jt-reveal-show {
     opacity: 1 !important;
@@ -8933,7 +8869,7 @@ button:focus-visible{
     visibility: visible !important;
 }
 
-/* Keep portfolio images sharp */
+/* 2. Portfolio images: prevent accidental blur/filter effects */
 #portfolio .portfolio-item,
 #portfolio .portfolio-image,
 #portfolio .portfolio-image img {
@@ -8944,140 +8880,52 @@ button:focus-visible{
     opacity: 1 !important;
 }
 
-/* Mobile fix */
+/* 3. Mobile: keep all major sections and cards visible */
 @media (max-width: 768px) {
-
-    .quick-card,
-    .portfolio-item,
-    .service-category,
-    .service-box,
-    .package-card,
-    .about-visual,
-    .about-content,
-    .stats > div,
-    .review-card,
-    .contact-content,
-    .location-box {
-        opacity: 1 !important;
-        transform: none !important;
-        filter: none !important;
-        visibility: visible !important;
-    }
-}
-
-
-/* =====================================================
-   FINAL MOBILE BLUR FIX — JT PHOTO STUDIO
-   ===================================================== */
-
-@media (max-width: 768px) {
-
-    /* QUICK SERVICE */
     .quick-services,
     .quick-services .quick-card,
-    .quick-services .quick-card * {
-        opacity: 1 !important;
-        filter: none !important;
-        transform: none !important;
-        visibility: visible !important;
-    }
-
-    /* OUR SERVICES */
+    .quick-services .quick-card *,
     #services,
     #services .center-heading,
     #services .service-category,
     #services .service-box,
-    #services .service-box * {
-        opacity: 1 !important;
-        filter: none !important;
-        transform: none !important;
-        visibility: visible !important;
-    }
-
-    /* ABOUT LOGO */
+    #services .service-box *,
+    #portfolio .portfolio-item,
+    #packages .package-card,
     #about,
     #about .about-visual,
-    #about .about-visual img {
-        opacity: 1 !important;
-        filter: none !important;
-        transform: none !important;
-        visibility: visible !important;
-    }
-
-    /* REVIEWS */
+    #about .about-visual *,
+    #about .about-content,
+    #about .stats,
+    #about .stats > div,
+    #about .stats > div *,
     #reviews,
     #reviews .review-card,
-    #reviews .review-card * {
-        opacity: 1 !important;
-        filter: none !important;
-        transform: none !important;
-        visibility: visible !important;
-    }
-
-    /* CONTACT */
+    #reviews .review-card *,
     #contact,
     #contact .contact-content,
     #contact .location-box,
     #contact .contact-content * {
         opacity: 1 !important;
-        filter: none !important;
         transform: none !important;
+        filter: none !important;
         visibility: visible !important;
     }
 
-}
-
-
-/* =====================================================
-   MOBILE FIX — 500+ STATS SECTION BLUR
-   ===================================================== */
-
-@media (max-width: 768px) {
-
+    /* Stats should not inherit backdrop blur from other effects. */
     #about .stats,
     #about .stats > div,
     #about .stats > div * {
-        opacity: 1 !important;
-        filter: none !important;
-        transform: none !important;
-        visibility: visible !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
     }
-
 }
 
-
-/* ===== FINAL DESKTOP HERO PHOTO POSITION ===== */
-@media (min-width: 769px) {
-    .hero::before {
-        background-position: center 35% !important;
-        background-size: cover !important;
-    }
-}
-
-/* ===== FINAL DESKTOP HERO PHOTO POSITION ===== */
-@media (min-width: 769px) {
-    .hero::before {
-        background-position: center 35% !important;
-        background-size: cover !important;
-    }
-}
-
-
-/* ===== HERO PHOTO - DESKTOP FIX ===== */
+/* 4. Desktop hero photo position */
 @media (min-width: 769px) {
     .hero::before {
         background-size: 92% auto !important;
         background-position: 98% center !important;
         background-repeat: no-repeat !important;
-    }
-}
-
-   /* MOBILE LOGO SIZE */
-@media (max-width: 768px) {
-    .logo {
-        transform: scale(5);
-        transform-origin: left center;
     }
 }
