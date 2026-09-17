@@ -8925,7 +8925,7 @@ button:focus-visible{
 @media (min-width: 769px) {
     .hero::before {
         background-size: 92% auto !important;
-        background-position: 98% center !important;
+        background-position:  center !important;
         background-repeat: no-repeat !important;
     }
 }
@@ -8942,7 +8942,7 @@ button:focus-visible{
         background-size: cover !important;
 
         /* Photo ko right se thoda center ki taraf lao */
-        background-position: 35% center !important;
+        background-position: center !important;
 
         background-repeat: no-repeat !important;
     }
