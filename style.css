@@ -9068,8 +9068,8 @@ button:focus-visible{
 /* ===== HERO PHOTO - DESKTOP FIX ===== */
 @media (min-width: 769px) {
     .hero::before {
-        background-size: 82% auto !important;
-        background-position: 88% center !important;
+        background-size: 92% auto !important;
+        background-position: 98% center !important;
         background-repeat: no-repeat !important;
     }
 }
