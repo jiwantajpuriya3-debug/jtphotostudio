@@ -9055,3 +9055,11 @@ button:focus-visible{
         background-size: cover !important;
     }
 }
+
+/* ===== FINAL DESKTOP HERO PHOTO POSITION ===== */
+@media (min-width: 769px) {
+    .hero::before {
+        background-position: center 35% !important;
+        background-size: cover !important;
+    }
+}
