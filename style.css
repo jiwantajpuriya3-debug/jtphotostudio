@@ -9073,3 +9073,11 @@ button:focus-visible{
         background-repeat: no-repeat !important;
     }
 }
+
+   /* MOBILE LOGO SIZE */
+@media (max-width: 768px) {
+    .logo {
+        transform: scale(1.25);
+        transform-origin: left center;
+    }
+}
