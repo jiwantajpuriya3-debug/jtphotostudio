@@ -8930,3 +8930,21 @@ button:focus-visible{
     }
 }
 
+ /* =========================================================
+   HERO PHOTO — CENTER POSITION FIX
+   ========================================================= */
+
+@media (min-width: 769px) {
+    .hero::before {
+        width: 55% !important;
+        height: 120% !important;
+
+        background-size: cover !important;
+
+        /* Photo ko right se thoda center ki taraf lao */
+        background-position: 35% center !important;
+
+        background-repeat: no-repeat !important;
+    }
+}
+
