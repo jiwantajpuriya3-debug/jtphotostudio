@@ -8920,3 +8920,47 @@ button:focus-visible{
     }
 
 }
+
+   /* =========================================
+   FIX — MOBILE CONTENT BLUR
+   ========================================= */
+
+.jt-reveal,
+.jt-reveal-show {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    visibility: visible !important;
+}
+
+/* Keep portfolio images sharp */
+#portfolio .portfolio-item,
+#portfolio .portfolio-image,
+#portfolio .portfolio-image img {
+    filter: none !important;
+}
+
+#portfolio .portfolio-image img {
+    opacity: 1 !important;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+
+    .quick-card,
+    .portfolio-item,
+    .service-category,
+    .service-box,
+    .package-card,
+    .about-visual,
+    .about-content,
+    .stats > div,
+    .review-card,
+    .contact-content,
+    .location-box {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        visibility: visible !important;
+    }
+}
