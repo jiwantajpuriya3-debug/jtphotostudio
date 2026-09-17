@@ -8874,3 +8874,49 @@ button:focus-visible{
         margin-bottom: 40px;
     }
 }
+
+/* =========================================
+   FIX — MOBILE SCROLL REVEAL
+   ========================================= */
+
+.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    visibility: visible !important;
+}
+
+.reveal.show {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    visibility: visible !important;
+}
+
+/* Keep portfolio images sharp */
+#portfolio .portfolio-item,
+#portfolio .portfolio-image,
+#portfolio .portfolio-image img {
+    filter: none !important;
+}
+
+#portfolio .portfolio-image img {
+    opacity: 1 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .service-box,
+    .portfolio-item,
+    .package-card,
+    .review-card,
+    .about-content,
+    .stats {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        visibility: visible !important;
+    }
+
+}
