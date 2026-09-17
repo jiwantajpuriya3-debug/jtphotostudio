@@ -9077,7 +9077,7 @@ button:focus-visible{
    /* MOBILE LOGO SIZE */
 @media (max-width: 768px) {
     .logo {
-        transform: scale(1.25);
+        transform: scale(5);
         transform-origin: left center;
     }
 }
