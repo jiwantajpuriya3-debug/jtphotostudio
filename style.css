@@ -9005,3 +9005,216 @@ button:focus-visible{
 
 }
 
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    min-height: 520px;
+    overflow: hidden;
+    background: #050505;
+    display: flex;
+    align-items: center;
+}
+/* Background photograph */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("YOUR-WEDDING-IMAGE.jpg");
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1.02);
+}
+/* Cinematic black gradient */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.97) 0%,
+            rgba(0, 0, 0, 0.88) 22%,
+            rgba(0, 0, 0, 0.48) 48%,
+            rgba(0, 0, 0, 0.10) 75%,
+            rgba(0, 0, 0, 0.25) 100%
+        );
+}
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 1100px;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+    padding-top: 20px;
+}
+/* Small gold text */
+.hero-tagline {
+    margin: 0 0 10px;
+    color: #c9a33a;
+    font-family: "Georgia", serif;
+    font-size: 22px;
+    font-style: italic;
+}
+/* Main heading */
+.hero h1 {
+    margin: 0;
+    color: #fff;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.hero h1 span {
+    display: block;
+    color: #d7ad3d;
+    font-weight: 500;
+}
+/* Subtitle */
+.hero-subtitle {
+    margin: 24px 0 28px;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+/* =========================
+   BUTTONS
+========================= */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    height: 42px;
+    padding: 0 22px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    color: #111;
+    background: #d8ad3d;
+    border: 1px solid #d8ad3d;
+}
+.btn-primary:hover {
+    background: #efc85c;
+    border-color: #efc85c;
+}
+.btn-outline {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #c39b35;
+}
+.btn-outline:hover {
+    background: #c39b35;
+    color: #111;
+}
+/* =========================
+   SOCIAL ICONS
+========================= */
+.hero-socials {
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-socials a {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.hero-socials a:hover {
+    color: #d8ad3d;
+    transform: scale(1.15);
+}
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px) {
+    .hero {
+        height: 500px;
+    }
+    .hero-content {
+        max-width: calc(100% - 50px);
+    }
+    .hero h1 {
+        font-size: 55px;
+    }
+    .hero-socials {
+        right: 25px;
+    }
+}
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+    .hero {
+        height: 650px;
+        min-height: 650px;
+    }
+    .hero-bg {
+        background-position: 65% center;
+    }
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0,0,0,0.96) 0%,
+                rgba(0,0,0,0.78) 55%,
+                rgba(0,0,0,0.30) 100%
+            );
+    }
+    .hero-content {
+        max-width: calc(100% - 40px);
+        padding-top: 20px;
+    }
+    .hero-tagline {
+        font-size: 17px;
+    }
+    .hero h1 {
+        font-size: 46px;
+        letter-spacing: 1px;
+    }
+    .hero-subtitle {
+        font-size: 12px;
+        line-height: 1.8;
+        max-width: 300px;
+    }
+    .hero-buttons {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .btn {
+        min-width: 140px;
+        height: 40px;
+        padding: 0 15px;
+    }
+    .hero-socials {
+        right: 12px;
+        gap: 10px;
+    }
+}
