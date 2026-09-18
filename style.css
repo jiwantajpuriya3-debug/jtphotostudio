@@ -8992,7 +8992,7 @@ button:focus-visible{
     }
 
     #about .about-visual img {
-        width: 300% !important;
+        width: 200% !important;
         max-width: none !important;
 
         /*
