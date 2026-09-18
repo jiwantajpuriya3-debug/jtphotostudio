@@ -9005,3 +9005,21 @@ button:focus-visible{
 
 }
 
+
+ .social-icons {
+    display: flex;
+}
+
+.hero-social {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        display: none !important;
+    }
+
+    .hero-social {
+        display: flex !important;
+    }
+}
